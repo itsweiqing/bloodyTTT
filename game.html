@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <img src="Graphics/TITLE1.png" id="gameTitle">
+    
+    <title>
+      BLOODY Tic Tac Toe
+    </title>
+
+    <link rel="stylesheet" href="gameStyle.css">
+
+  </head>
+
+  <body>
+    <!--<div class="dropdown">
+          <span>RULES</span>
+          <div class="dropdown-content">
+            <p class="dropdown-item">1. Place X or O on the board.</p>
+            <p class="dropdown-item">2. The player who gets three of their symbols in a row wins.</p>
+            <p class="dropdown-item">3. The game is a tie if nobody can get 3 symbols in a row.</p>
+          </div>
+        </div> -->
+
+        <div class="tic-tac-toe">
+          <div class="row">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+          </div>
+          <div class="row">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+          </div>
+          <div class="row">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+          </div>
+        </div>
+        <br>
+        <div class="reset-container">
+          <button class="reset-button">RESET</button><br>
+          <a href="home.html" class="button">RETURN TO HOME</a>
+        </div>
+
+        <!-- Pop-up Result box -->
+        <div class="game-over-container">
+          <div class="game-over-box">
+            <img src="Graphics/TITLE1.png" id="gameTitleGO">
+            <p class="game-over-text">GAME OVER</p>
+            <p class="result-text"></p>
+            <button class="play-again-button">PLAY AGAIN</button>
+          </div>
+        </div>
+
+  </body>
+
+  <!-- JavaScript File -->
+  <script type="text/javascript" src="game.js" ></script>
+</html>

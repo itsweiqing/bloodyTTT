@@ -1,0 +1,192 @@
+/* All elements */
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    font-family: 'Verdana', sans-serif;
+    flex-direction: column;
+}
+
+/* Discard showing the title */
+title {
+    display: none;
+}
+
+/* Content in Homepage & Rules page*/
+#pageContent {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: auto;
+    height: 100vh;
+
+    background-image: url("Graphics/BG4.png");
+    background-color: rgb(246, 226, 226);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Game Title */
+#gameTitle{
+    width: 55em;
+    height: auto;
+    padding: 0.9em 0.8em;
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+    animation-delay: 0.8;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+/* Buttons */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 1s ease-in forwards;
+    animation-delay: 0.8;
+}
+  
+.button {
+    display: block;
+    text-align: center;
+    padding: 0.6em 1em;
+    border: none;
+    border-radius: 0.3em;
+    background-color: white;
+    color: rgb(87, 16, 16);
+    font-size: 1.5em;
+    font-weight: 550;
+    text-decoration: none;
+}
+
+/* Hover effects on buttons */
+.button:hover {
+    background-color: #851e1e;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/*  */
+/* Rules Title */
+#ruleTitle {
+    width: 20em;
+    height: auto;
+    padding: 0.9em 0.8em;
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+    animation-delay: 0.8;
+    background-color: hsl(0, 0%, 100%, 0.4);
+    border: none;
+    border-radius: 0.3em;
+    opacity: 0.3;
+}
+
+
+/* Instructions */
+.instruction-container {
+    width: 40%;
+    margin: 0 auto;
+    padding: 3em;
+    border: none;
+    border-radius: 0.3em;
+    text-align: left;
+    background-color: white;
+    color: rgb(87, 16, 16);
+    font-size: 1.5em;
+    animation: fadeIn 0.8s ease-in forwards;
+    animation-delay: 0.6;
+}
+
+/*----Media Queries----*/
+
+/* Tablet View */
+@media screen and (max-width:1030px) {
+    html, body {
+        max-width: 100%;
+        overflow-y: hidden;
+    }
+
+    #gameTitle{
+        width: 40em;
+        height: auto;
+    }
+    
+    .button {
+        font-size: 1.2em;
+    }
+
+    #ruleTitle {
+        width: 15em;
+        height: auto;
+    }
+
+    .instruction-container {
+        width: 60%;
+        font-size: 1.2em;
+    }
+}
+
+/* Mobile View */
+@media screen and (max-width:660px) {
+    html, body {
+        max-width: 100%;
+        overflow-y: hidden;
+    }
+
+    #gameTitle{
+        width: 35em;
+        height: auto;
+    }
+    
+    .button {
+        font-size: 1em;
+    }
+
+    #ruleTitle {
+        width: 12em;
+        height: auto;
+    }
+
+    .instruction-container {
+        width: 60%;
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width:425px) {
+    html, body {
+        max-width: 100%;
+        overflow-y: hidden;
+    }
+
+    #gameTitle{
+        width: 25em;
+        height: auto;
+    }
+    
+    .button {
+        font-size: 0.8em;
+    }
+
+    #ruleTitle {
+        width: 10em;
+        height: auto;
+    }
+
+    .instruction-container {
+        width: 60%;
+        font-size: 0.8em;
+    }
+}
+
