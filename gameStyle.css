@@ -298,7 +298,7 @@ body {
   display: none;
   position: fixed;
   top: 50%;
-  left: 41.5%;
+  left: 50%;
   transform: translate(-50%, -50%);
   background-color: whitesmoke;
   background-image: url(Graphics/BG5.png);
